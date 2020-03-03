@@ -37,7 +37,24 @@ int fibonacci(int n) {
 var result = fibonacci(20);
 print('${result.toString()} $name');
 
+int astronauts = 1;
+//EXCEPTIONS
+//Use Throw
+if (astronauts == 0) {
+  throw StateError('No astronauts.');
+}
 
+
+//try {
+//  for (var object in flybyObjects) {
+//    var description = await File('$object.txt').readAsString();
+//    print(description);
+//  }
+//} on IOException catch (e) {
+//  print('Could not describe object: $e');
+//} finally {
+//  flybyObjects.clear();
+//}
 }
 
 //Variables
@@ -100,3 +117,5 @@ Future<void> printWithDelay(String message) async {
   await Future.delayed(oneSecond);
   print(message);
 }
+
+
