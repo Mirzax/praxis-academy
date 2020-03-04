@@ -18,6 +18,6 @@ main(){
 
 
   var got = (cost[1] << 4 - 3) - (cost[2] >> 1) ;
-  //print(got);
+  print(got);
 
 }
