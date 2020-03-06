@@ -130,7 +130,7 @@ public class ATMMachine
                 {
                     System.out.println("\tError Input! Please enter a number only.");
                     read = new Scanner(System.in);
-                    System.out.println("\tEnter yout choice:");
+                    System.out.println("\tEnter your choice:");
                     select = read.nextInt();
                 }
                
