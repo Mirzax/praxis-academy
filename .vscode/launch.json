@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - ATMMachine",
+            "request": "launch",
+            "mainClass": "ATMMachine",
+            "projectName": "praxis-academy_a5171bf6"
+        },
+        {
             "name": "Dart",
             "program": "bin/main.dart",
             "request": "launch",

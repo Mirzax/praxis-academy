@@ -11,13 +11,16 @@ void main()async{
   print('Hhmm..');
   await hello();
 
+
   print("wait. . .");
   var y = await getPengguna(25);
   print('Wellcome! ${y.firstName} ${y.lastName} with ID : ${y.id}');
 
+
   await Future.forEach([1,2,3,4,5,6,7,8,9,10], (int n) => 
     isPrimeNumber(n)
     .then((x) => print("${n}${x ? " is" : " is not"} a prime number")));
+  
   
   var result = await openFile("theFile");
     print("success!");
