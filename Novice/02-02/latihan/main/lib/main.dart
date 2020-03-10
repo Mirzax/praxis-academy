@@ -55,7 +55,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: Column(children: <Widget>[
-        MainAxisAlignment.spaceAround[
         MyAppBar(
           title: Text(
             'This is Title',
@@ -66,9 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Center(
             child: Text(
               'Hello',
-              style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.w200),
+              style: TextStyle(fontSize: 35, fontWeight: FontWeight.w200),
             ),
           ),
         ),
@@ -89,9 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: null),
           ),
         ),
-      ]
-      ]
-      ),
+      ]),
       // appBar: AppBar(
       //   title: Text(widget.title),
       // ),
