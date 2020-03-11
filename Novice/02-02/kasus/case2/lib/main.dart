@@ -2,43 +2,45 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(new MaterialApp(
-    //home: new Text("Cool")
-    home: new MyStatelessWidget()
-  ));
+      //home: new Text("Cool")
+      home: new MyStatelessWidget()));
 }
 
 class MyStatelessWidget extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     //Scaffold provide functionality of appbar, body of app etc
     return new Scaffold(
-      appBar: new AppBar(title: new Text("Stateless Widget")),
-      body: new Container(
-        //adding padding around card
-        padding: new EdgeInsets.all(20.0),
-        child: new Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            // new Text("Hey"),
-            // new Text("My name"),
-            // new Text("Is Raunak")
+        appBar: new AppBar(title: new Text("Stateless Widget")),
+        body: new Container(
+            //adding padding around card
+            padding: new EdgeInsets.all(20.0),
+            child: new Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  // new Text("Hey"),
+                  // new Text("My name"),
+                  // new Text("Is Raunak")
 
-            new MyCard(
-              title: new Text("Ini Kue!", style: new TextStyle(fontSize: 20.0)),
-              icon: new Icon(Icons.cake, size: 40.0, color: Colors.redAccent)
-            ),
-            new MyCard(
-              title: new Text("Ini Donat!", style: new TextStyle(fontSize: 20.0)),
-              icon: new Icon(Icons.donut_large, size: 40.0, color: Colors.brown)
-            ),
-            new MyCard(
-              title: new Text("Ini Mata!", style: new TextStyle(fontSize: 20.0)),
-              icon: new Icon(Icons.visibility, size: 40.0, color: Colors.blue)
-            )
-          ]
-        )
-      )
-    );
+                  new MyCard(
+                      title: new Text("Ini Kue!",
+                          style: new TextStyle(
+                              fontSize: 20.0, fontWeight: FontWeight.w200)),
+                      icon: new Icon(Icons.cake,
+                          size: 40.0, color: Colors.redAccent)),
+                  new MyCard(
+                      title: new Text("Ini Donat!",
+                          style: new TextStyle(
+                              fontSize: 20.0, fontWeight: FontWeight.w200)),
+                      icon: new Icon(Icons.donut_large,
+                          size: 40.0, color: Colors.brown)),
+                  new MyCard(
+                      title: new Text("Ini Mata!",
+                          style: new TextStyle(
+                              fontSize: 20.0, fontWeight: FontWeight.w200)),
+                      icon: new Icon(Icons.visibility,
+                          size: 40.0, color: Colors.blue))
+                ])));
   }
 }
 
@@ -50,26 +52,20 @@ class MyCard extends StatelessWidget {
   final Widget icon;
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return new Container(
-      //adding bottom padding on card
-      padding: new EdgeInsets.only(bottom: 20.0),
-      child: new Card(
-        child: new Container(
-          //adding padding inside card
-          padding: new EdgeInsets.all(15.0),
-          child: new Column(
-          children: <Widget>[
-              // new Text("I love Flutter"),
-              // new Icon(Icons.favorite)
+        //adding bottom padding on card
+        padding: new EdgeInsets.only(bottom: 20.0),
+        child: new Card(
+            child: new Container(
+                //adding padding inside card
+                padding: new EdgeInsets.all(15.0),
+                child: new Column(children: <Widget>[
+                  // new Text("I love Flutter"),
+                  // new Icon(Icons.favorite)
 
-              this.title,
-              this.icon
-            ]
-          )
-        )
-        
-      )
-    );
+                  this.title,
+                  this.icon
+                ]))));
   }
 }
